@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Vue1</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+</style>
+</head>
+<body>
+
+<h1>Dev App Cloud</h1>
+<h2>Utilisateur standard</h2>
+
+<l>Retour query :</l>
+<div class="table-responsive-sm">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>listing_url</th>
+		<th>name</th>
+		<th>neighbourhood_group_cleansed</th>
+		<th>property_type</th>
+      </tr>
+    </thead>
+    <tbody>
+		<tr>
+		  <td><%= model.id %></td>
+		  <td><%= model.listing_url %></td>
+		  <td><%= model.name %></td>
+		  <td><%= model.neighbourhood_group_cleansed %></td>
+		  <td><%= model.property_type %></td>
+		</tr>
+    </tbody>
+  </table>
+</div>
+<br />
+
+</body>
+</html>
